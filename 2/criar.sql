@@ -77,10 +77,10 @@ CREATE TABLE product(serial_code INTEGER PRIMARY KEY NOT NULL,
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------;
 
 CREATE TABLE quantity(order_code integer references orderr, 
-			 s_code integer references product, 
-			 quant integer, 
-			 PRIMARY KEY(order_code, s_code), 
-			 check(quant > 0));
+			 		  s_code integer references product, 
+			 		  quant integer, 
+			 		  PRIMARY KEY(order_code, s_code), 
+			 		  check(quant > 0));
 
 CREATE TABLE rating(client_id integer references client, 
 					serial_code integer references product, 
