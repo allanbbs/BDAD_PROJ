@@ -29,9 +29,9 @@ CREATE TABLE address(id INTEGER,
 					 door_number integer, 
 					 floor_number integer, 
 					 enterprise boolean,
-					 d_name text NOT NULL, 
+					 d_id INTEGER NOT NULL, 
 					 PRIMARY KEY(id),
-					 FOREIGN KEY(d_name) REFERENCES district(id), 
+					 FOREIGN KEY(d_id) REFERENCES district(id), 
 					 check(floor_number >= 0 and door_number >= 0 and street!=''));
 
 CREATE TABLE district(id INTEGER PRIMARY KEY NOT NULL,
