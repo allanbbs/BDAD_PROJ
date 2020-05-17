@@ -5,6 +5,9 @@ INSERT INTO client VALUES(492, 62820384, 'rafael', 'rafael@gmail.com', '2000-04-
 INSERT INTO client VALUES(738, 56952845, 'luis', 'luis@gmail.com', '2002-07-23', 'm',34567890);
 INSERT INTO client VALUES(293, 84038465, 'amanda', 'amanda@gmail.com', '1997-07-12', 'f',0987654567);
 INSERT INTO client VALUES(239, 23948309, 'pedro', 'pedro@gmail.com', '1999-12-26', 'm', 765388580);
+INSERT INTO client VALUES(666, 20180013, 'beatriz', 'beatriz@gmail.com', '2000-12-26', 'm', 765388590);
+INSERT INTO client VALUES(777, 20023340, 'lula', 'forabolsonaro@gmail.com', '1979-12-26', 'm', 765388565);
+INSERT INTO client VALUES(389, 20200304, 'dilma', 'dilma@gmail.com', '1984-12-13', 'm', 765388355);
 
 INSERT INTO country VALUES(5,'portugal');
 INSERT INTO country VALUES(3,'brasil');
@@ -33,7 +36,7 @@ INSERT INTO pay_meth VALUES(3,'paypal');
 INSERT INTO orderr VALUES(45678, 1,222);
 INSERT INTO orderr VALUES(56784, 0,345);
 INSERT INTO orderr VALUES(67845, 1,555);
-INSERT INTO orderr VALUES(56789, 1, 492);
+INSERT INTO orderr VALUES(56789, 1, 222);
 INSERT INTO orderr VALUES(38472, 1,738);
 INSERT INTO orderr VALUES(49837, 0,293);
 INSERT INTO orderr VALUES(48283, 1,239);
