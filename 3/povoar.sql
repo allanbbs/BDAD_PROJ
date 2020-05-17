@@ -1,3 +1,4 @@
+PRAGMA foreign_keys = ON;
 INSERT INTO client VALUES(222, 12345678, 'bianca', 'bianca@gmail.com', '2000-06-12', 'f', 987654321);
 INSERT INTO client VALUES(345, 23456781, 'allan', 'allan@gmail.com', '2000-09-03', 'm', 876543219);
 INSERT INTO client VALUES(555, 34567812, 'carol', 'carol@gmail.com', '2000-07-07', 'f', 765432198);
