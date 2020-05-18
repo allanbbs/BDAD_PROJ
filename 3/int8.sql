@@ -2,10 +2,9 @@
 .headers on
 .nullvalue NULL
 
-#compras feitas por um mesmo client 
-#FACIL
+#cidades em que foram feitas entregas para empresas
 
 
-SELECT client_id, id 
-FROM orderr, client
-WHERE orderr.client_id = client.id
+SELECT dname, enterprise
+FROM address, district
+WHERE enterprise == 1 AND address.d_id == district.id

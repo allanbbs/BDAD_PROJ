@@ -23,7 +23,7 @@ INSERT INTO district VALUES(22,'rio de janeiro',3);
 INSERT INTO district VALUES(32,'sao paulo',3);
 
 INSERT INTO address VALUES(3,'honorio', 346, 2,0, 34);
-INSERT INTO address VALUES(4,'areosa', 2, 3, 0,34);
+INSERT INTO address VALUES(4,'areosa', 2, 3, 1,34);
 INSERT INTO address VALUES(6,'happy', 176, 0,0, 70);
 INSERT INTO address VALUES(453,'marques', 193, 2,0, 34);
 INSERT INTO address VALUES(234,'rio branco', 234, 4,0, 22);
