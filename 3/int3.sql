@@ -2,6 +2,8 @@
 .headers on
 .nullvalue NULL
 #DIFICIL
+--;Preco medio dos produtos que foram ordenados pelo menos de uma vez (da pra fazer a mesma coisa
+--;de forma mais simples, entao provavelmente vai mudar)
 SELECT avg(product.value) FROM product
 	WHERE  product.serial_code IN (SELECT product.serial_code FROM product,quantity,orderr,client
 		WHERE quantity.order_code == orderr.order_code AND 
