@@ -2,6 +2,7 @@
 .headers on
 .nullvalue NULL
 #MEDIO/FACIL
+#Produtos que foram pedidos pelo menos 4 vezes
 SELECT prod_name,value,description
 FROM product,quantity
 WHERE product.serial_code = quantity.s_code AND quantity.quant>=4
