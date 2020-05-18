@@ -74,6 +74,11 @@ CREATE TABLE product(serial_code INTEGER PRIMARY KEY NOT NULL,
 					 FOREIGN KEY(cat_id) REFERENCES category(id) ON DELETE CASCADE ON UPDATE CASCADE , 
 					 check(prod_name!=''));
 
+CREATE TABLE stock (stock_id integer PRIMARY KEY NOT NULL, 
+					serial_code integer NOT NULL references product ON UPDATE CASCADE ON DELETE CASCADE,
+					quant integer,
+					check(quant>= 0));
+
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------;
 
 CREATE TABLE quantity(order_code integer references orderr ON DELETE CASCADE ON UPDATE CASCADE, 
@@ -99,4 +104,6 @@ CREATE TABLE order_address(order_code integer references orderr ON DELETE CASCAD
 CREATE TABLE order_payment (order_code integer references orderr ON DELETE CASCADE ON UPDATE CASCADE, 
 							pay_id integer references payment_info ON DELETE CASCADE ON UPDATE CASCADE, 
 							PRIMARY KEY(order_code, pay_id));
+
+
 END TRANSACTION;
