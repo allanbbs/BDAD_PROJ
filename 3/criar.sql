@@ -9,6 +9,7 @@ drop table if exists orderr;
 drop table if exists category;
 drop table if exists payment_info;
 drop table if exists product;
+drop table if exists stock;
 drop table if exists quantity;
 drop table if exists rating;
 drop table if exists stock;
