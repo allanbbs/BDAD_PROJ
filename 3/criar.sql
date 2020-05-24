@@ -12,6 +12,7 @@ drop table if exists product;
 drop table if exists stock;
 drop table if exists quantity;
 drop table if exists rating;
+drop table if exists stock;
 drop table if exists delivery_destination;
 drop table if exists order_address;
 drop table if exists order_payment;

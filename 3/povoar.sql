@@ -1,4 +1,5 @@
 PRAGMA foreign_keys = ON;
+
 INSERT INTO client VALUES(222, 12345678, 'bianca', 'bianca@gmail.com', '2000-06-12', 'f', 987654321);
 INSERT INTO client VALUES(345, 23456781, 'allan', 'allan@gmail.com', '2000-06-12', 'm', 876543219);
 INSERT INTO client VALUES(555, 34567812, 'carol', 'carol@gmail.com', '2000-07-07', 'f', 765432198);
@@ -63,11 +64,13 @@ INSERT INTO product VALUES(4563, 100, 'cadeira', 'cadeira de madeira', 3);
 INSERT INTO product VALUES(4827,15, 'calça', 'tamanho m', 2);
 INSERT INTO product VALUES(7344, 300, 'celular', 'aparelho com 128gb de memoria', 4);
 
+
 INSERT INTO quantity VALUES(45678, 7654, 10);
+INSERT INTO quantity VALUES(45678, 4827, 5);
 INSERT INTO quantity VALUES(56784, 5476, 4);
 INSERT INTO quantity VALUES(56784, 6547, 4);
 INSERT INTO quantity VALUES(67845, 5476, 3);
-INSERT INTO quantity VALUES(38472, 4563, 3);
+INSERT INTO quantity VALUES(38472, 4563, 2);
 INSERT INTO quantity VALUES(49837, 7344, 1);
 INSERT INTO quantity VALUES(48283, 4827, 1);
 INSERT INTO quantity VALUES(98271, 4827, 1);
