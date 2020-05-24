@@ -1,8 +1,10 @@
 PRAGMA foreign_keys = ON;
 
 Create Trigger T1
-BEFORE Insert On client
-	When date(new.birthdate) IS NULL
+AFTER Update On  client
 Begin
-	SELECT	raise(rollback,	'INVALID BIRTHDATE');
-END;
+	update rating set client_id = new.id where client_id = old.id;
+	update delivery_destination set client_id = new.id where client_id = old.id;
+	update payment_info set client_id = new.id where client_id = old.id;
+	update orderr set client_id = new.id where client_id = old.id;
+End;

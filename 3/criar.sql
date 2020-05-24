@@ -50,7 +50,7 @@ CREATE TABLE pay_meth(id INTEGER PRIMARY KEY,
 CREATE TABLE orderr(order_code integer PRIMARY KEY, 
 					processed boolean,
 					client_id INTEGER NOT NULL,
-					FOREIGN KEY(client_id) REFERENCES client(id) ON DELETE CASCADE ON UPDATE CASCADE, 
+					FOREIGN KEY(client_id) REFERENCES client(id) ON DELETE CASCADE, 
 					check(order_code >= 0));
 
 CREATE TABLE category(id INTEGER PRIMARY KEY,
@@ -65,7 +65,7 @@ CREATE TABLE payment_info(id INTEGER PRIMARY KEY,
 						  safety_number integer NOT NULL, 
 						  cellphone_number integer,
 						  client_id INTEGER NOT NULL,
-						  FOREIGN KEY(client_id) REFERENCES client(id) ON DELETE CASCADE ON UPDATE CASCADE);
+						  FOREIGN KEY(client_id) REFERENCES client(id) ON DELETE CASCADE);
 
 CREATE TABLE product(serial_code INTEGER PRIMARY KEY NOT NULL, 
 					 value number, 
@@ -88,13 +88,13 @@ CREATE TABLE quantity(order_code integer references orderr ON DELETE CASCADE ON 
 			 		  PRIMARY KEY(order_code, s_code), 
 			 		  check(quant > 0));
 
-CREATE TABLE rating(client_id integer references client ON DELETE CASCADE ON UPDATE CASCADE, 
+CREATE TABLE rating(client_id integer references client ON DELETE CASCADE, 
 					serial_code integer references product ON DELETE CASCADE ON UPDATE CASCADE , 
 					rate integer, 
 					PRIMARY KEY(client_id, serial_code), 
 					check(rate >= 0));
 
-CREATE TABLE delivery_destination(client_id integer references client ON DELETE CASCADE ON UPDATE CASCADE, 
+CREATE TABLE delivery_destination(client_id integer references client ON DELETE CASCADE, 
 								  address_id INTEGER references address, 
 								  PRIMARY KEY(client_id, address_id));
 
