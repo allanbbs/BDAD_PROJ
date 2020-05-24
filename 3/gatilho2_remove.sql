@@ -1,2 +1,2 @@
 PRAGMA foreign_keys = ON;
-DROP TRIGGER T2;
+DROP TRIGGER  T2;
