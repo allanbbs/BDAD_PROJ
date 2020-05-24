@@ -6,4 +6,4 @@
 SELECT pName, COUNT(pName) AS cnt 
 FROM pay_meth
 GROUP BY pName
-ORDER BY cnt DESC
+ORDER BY cnt DESC;

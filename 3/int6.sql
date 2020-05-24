@@ -4,4 +4,4 @@
 
 SELECT order_code, processed
 FROM orderr
-WHERE orderr.processed == 0.0
+WHERE orderr.processed == 0.0;
