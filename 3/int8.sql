@@ -2,7 +2,7 @@
 .headers on
 .nullvalue NULL
 
-#cidades em que foram feitas entregas para empresas
+
 
 
 SELECT dname, enterprise

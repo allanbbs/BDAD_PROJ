@@ -42,6 +42,7 @@ INSERT INTO orderr VALUES(38472, 1,738);
 INSERT INTO orderr VALUES(49837, 0,293);
 INSERT INTO orderr VALUES(48283, 1,239);
 
+
 INSERT INTO category VALUES(4,'tech',4);
 INSERT INTO category VALUES(2,'cloth',2);
 INSERT INTO category VALUES(3,'home',3);
@@ -62,6 +63,7 @@ INSERT INTO product VALUES(4827,15, 'calça', 'tamanho m', 2);
 INSERT INTO product VALUES(7344, 300, 'celular', 'aparelho com 128gb de memoria', 4);
 
 INSERT INTO quantity VALUES(45678, 7654, 5);
+INSERT INTO quantity VALUES(56784, 5476, 4);
 INSERT INTO quantity VALUES(56784, 6547, 4);
 INSERT INTO quantity VALUES(67845, 5476, 3);
 INSERT INTO quantity VALUES(38472, 4563, 3);
